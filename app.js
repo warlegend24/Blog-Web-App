@@ -8,14 +8,9 @@ const mongoose = require("mongoose");
 
 
 
-//connecting our server with the mongodb database server:-
-mongoose.connect("mongodb://0.0.0.0:27017/blogDB", {useNewUrlParser: true})
-.then(function(res){
-  console.log("Connected to the mongodb server");
-})
-.catch(function(err){
-  console.log(err);
-});
+
+//connecting our server with the mongodb database server hosted on atlas cloud service:-
+mongoose.connect("mongodb+srv://Harman:Cricketer24@cluster0.mdmqurh.mongodb.net/blogDB");
 
 //making the post schema for the storing composed posts as documents in a 'posts' collection in the database:-
 
